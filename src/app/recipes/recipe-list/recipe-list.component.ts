@@ -7,7 +7,11 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
-  recipes: Recipe[] = [];
+  recipes: Recipe[] = [
+    new Recipe('Test', 'Testing', 'https://assets3.thrillist.com/v1/image/2797371/size/tl-horizontal_main_2x.jpg'),
+    new Recipe('Test', 'Testing', 'https://assets3.thrillist.com/v1/image/2797371/size/tl-horizontal_main_2x.jpg'),
+
+  ];
 
   constructor() { }
 
